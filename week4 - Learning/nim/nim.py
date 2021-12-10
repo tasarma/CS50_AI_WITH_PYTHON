@@ -139,7 +139,7 @@ class NimAI():
             return 0
 
         for action in actions:
-            reward = max(self.get_q_value(state, actions), reward)
+            reward = max(self.get_q_value(state, action), reward)
         
         return reward
 
@@ -171,7 +171,6 @@ class NimAI():
                 best_action = action
         
         return best_action
-
 
 
 def train(n):
